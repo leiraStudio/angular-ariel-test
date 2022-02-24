@@ -1,0 +1,24 @@
+<mat-card style="padding: 5%">
+  <mat-card-header style="height: 80px">
+    <mat-card-title>{{ charactedSelected.name }} </mat-card-title>
+    <mat-card-subtitle>{{ charactedSelected.nickname }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <img mat-card-image style="width: 100%" [src]="charactedSelected.img" />
+    <mat-icon>cake</mat-icon> :{{ charactedSelected.birthday }}
+    <mat-icon>military_tech</mat-icon> : {{ charactedSelected.status }}
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button
+      [routerLink]="['/edit', charactedSelected.char_id]"
+      color="primary"
+      mat-raised-button
+    >
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button color="warn" mat-raised-button (click)="remove(charactedSelected)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

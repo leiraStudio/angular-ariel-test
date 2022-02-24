@@ -1,0 +1,41 @@
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+html,
+body {
+  height: 100%;
+  background-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.mat-progress-bar .mat-progress-bar-buffer {
+  background: green;
+}
+//Agregando un estilo personalizado para el scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
